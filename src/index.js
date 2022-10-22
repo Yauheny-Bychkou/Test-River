@@ -1,5 +1,6 @@
 import MainPage from './modules/pages/mainPage';
-import './global.css';
-import './normalize.css';
+
+import './global.scss';
+import './normalize.scss';
 
 new MainPage();

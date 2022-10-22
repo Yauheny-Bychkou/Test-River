@@ -1,0 +1,55 @@
+.greeting {
+  background-image: url('/public/ship.jpg');
+  height: 714px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+}
+.greeting-wrapper {
+  position: relative;
+  padding-top: 91px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.greeting-wrapper::after {
+  position: absolute;
+  content: 'yachting';
+  bottom: 43px;
+  left: 47px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 28px;
+  width: 143px;
+  height: 28px;
+  color: #fff;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+}
+.greeting-wrapper__block {
+  padding-bottom: 17px;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.35);
+  margin-bottom: 24px;
+}
+.greeting-wrapper__title {
+  font-family: 'Cormorant', sans-serif;
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 75px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.greeting-wrapper__title-gray {
+  color: RGB(142, 159, 188);
+}
+.greeting-wrapper__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff;
+}

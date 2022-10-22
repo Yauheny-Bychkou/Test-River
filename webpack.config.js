@@ -10,13 +10,17 @@ const baseConfig = {
   module: {
     rules: [
       {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        test: /\.(png|jpg)$/,
+        loader: 'url-loader',
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
   },
   resolve: {
-    extensions: ['.js'],
+    extensions: ['.js', '.ts'],
   },
   output: {
     filename: 'index.js',
