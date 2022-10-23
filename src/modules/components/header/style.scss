@@ -7,16 +7,138 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 22px;
+  z-index: 3;
 }
 .header-title {
   margin: 0;
 }
 .header-wrapper {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 20px;
   padding-bottom: 22px;
+}
+.header-popUp {
+  position: absolute;
+  bottom: -282px;
+  right: -200%;
+  background-color: #fff;
+  border-radius: 4px;
+  width: 253px;
+  height: 273px;
+  opacity: 0;
+  z-index: 4;
+}
+.header-popUp-wrapper {
+  padding: 30px 22px 25px 31px;
+  position: relative;
+}
+.header-popUp-wrapper::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-bottom: 4px solid #fff;
+  border-right: 6px solid transparent;
+  top: -4px;
+  right: 10px;
+}
+.header-popUp-wrapper::before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-bottom: 4px solid #fff;
+  border-left: 6px solid transparent;
+  top: -4px;
+  right: 16px;
+}
+.header-popUp__user {
+  display: flex;
+}
+.header-popUp__user {
+  border-bottom: 1px solid #f2f2f2;
+}
+.header-popUp__user-img {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+.header-popUp__user-img::before {
+  position: absolute;
+  content: '';
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  border-radius: 50%;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+.header-popUp__user-ava {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  z-index: 3;
+}
+.header-popUp__user {
+  display: flex;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.header-popUp__user-name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #22282d;
+}
+.header-popUp__user-description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #7a8084;
+}
+.header-popUp__nav {
+  margin-bottom: 25px;
+}
+.header-popUp__item {
+  margin-bottom: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header-popUp__item:last-child {
+  margin-bottom: 0;
+}
+.header-popUp__user-name {
+  font-weight: 400;
+  font-size: 16px;
+  color: #22282d;
+}
+.header-popUp__link {
+  font-weight: 400;
+  font-size: 16px;
+  color: #7a8084;
+}
+.header-popUp__count {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #8e9fbc;
+  box-shadow: 0px 5px 10px rgba(142, 159, 188, 0.26);
+  border-radius: 31px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.header-popUp__exit {
+  text-decoration-line: underline;
+  color: #7a8084;
 }
 .header-panel {
   display: flex;
@@ -27,9 +149,6 @@
 }
 .header-panel__nav-list {
   display: flex;
-  padding: 0;
-  margin: 0;
-  list-style: none;
 }
 .header-panel__nav-item {
   margin-right: 34px;
@@ -118,24 +237,41 @@
   right: -5px;
 }
 .header-panel__user {
+  position: relative;
   display: flex;
   align-items: center;
   height: 100%;
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
   padding-left: 42px;
   cursor: pointer;
 }
-.header-panel__user-image {
+.header-panel__overlay {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  bottom: -5px;
+  right: -5px;
+}
+.header-panel__overlay:hover .header-popUp {
+  opacity: 1;
+  right: 0;
+  transition: 0.6s ease;
+}
+// .header-popUp:hover {
+//   opacity: 1;
+//   right: 0;
+//   transition: 0.5s ease;
+// }
+.header-user-image {
   position: relative;
   width: 36px;
   height: 36px;
   border-radius: 50%;
   margin-right: 14px;
 }
-.header-panel__user-image::before {
+.header-user-image::before {
   position: absolute;
   content: '';
-  z-index: 5;
+  z-index: 2;
   border-radius: 50%;
   left: -2px;
   right: -2px;
@@ -143,9 +279,9 @@
   bottom: -2px;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
 }
-.header-panel__user-avatar {
+.header-user-avatar {
   position: relative;
-  z-index: 5;
+  z-index: 3;
   width: 36px;
   height: 36px;
   border-radius: 50%;
