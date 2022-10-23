@@ -117,8 +117,5 @@ class Header {
     </div>
     `;
   }
-  addEventListenerToHeader(func) {
-    this.element.addEventListener('click', func);
-  }
 }
 export default Header;
