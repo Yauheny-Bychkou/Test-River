@@ -196,10 +196,13 @@ class All {
     `;
   }
   initSliderTabs() {
-    console.log(document.querySelector('.swiper'));
-    // const swiper = new Swiper('.swiper', {
-    //   direction: 'vertical',
+    // const swiper = new Swiper('.swiper-tabs', {
+    //   allowTouchMove: false,
+    //   modules: [Navigation],
+    //   direction: 'horizontal',
     //   loop: true,
+    //   slidesPerView: 6,
+    //   spaceBetween: 10,
     // });
   }
   initHorizontalSlider() {

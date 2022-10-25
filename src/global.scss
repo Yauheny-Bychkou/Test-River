@@ -39,3 +39,38 @@ ul {
   fill: #7a8084;
   transition: 0.9s ease;
 }
+.panel__button {
+  position: relative;
+  padding: 14px 39px 13px 39px;
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  width: 215px;
+  height: 49px;
+  margin-right: 38px;
+}
+.panel__button-border {
+  width: 215px;
+  height: 49px;
+  fill: rgba(255, 255, 255, 0.04);
+  stroke: #fff;
+  stroke-opacity: 0.1;
+  transition: 0.9s ease;
+}
+.panel__button::after {
+  position: absolute;
+  content: 'создать объявление';
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -25%);
+  z-index: 5;
+  color: #fff;
+  text-transform: uppercase;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 22px;
+}

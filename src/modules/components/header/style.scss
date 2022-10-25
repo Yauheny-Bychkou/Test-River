@@ -8,6 +8,7 @@
   font-size: 12px;
   line-height: 22px;
   z-index: 3;
+  transition: 0.9s ease;
 }
 .header-container {
   max-width: 1865px;
@@ -129,10 +130,7 @@
   font-size: 16px;
   color: #7a8084;
 }
-.header-popUp__item:hover .header-popUp__link {
-  color: #000;
-  transition: 0.9s ease;
-}
+
 .header-popUp__count {
   width: 24px;
   height: 24px;
@@ -163,10 +161,7 @@
 .header-panel__nav-item {
   margin-right: 34px;
 }
-.header-panel__nav-item:hover .header-panel__nav-link {
-  opacity: 0.5;
-  transition: 0.9s ease;
-}
+
 .header-panel__nav-item:last-child {
   margin-right: 0;
 }
@@ -176,51 +171,13 @@
   text-transform: uppercase;
   font-size: 14px;
 }
-.header-panel__button {
-  position: relative;
-  padding: 14px 39px 13px 39px;
-  background-color: transparent;
-  padding: 0;
-  border: 0;
-  width: 215px;
-  height: 49px;
-  margin-right: 38px;
-}
+
 .header-panel__buttons-marks {
   display: flex;
   align-items: center;
   margin-right: 45px;
 }
-.header-panel__button::after {
-  position: absolute;
-  content: 'создать объявление';
-  left: 50%;
-  top: 50%;
-  width: 100%;
-  height: 100%;
-  transform: translate(-50%, -25%);
-  z-index: 5;
-  color: #fff;
-  text-transform: uppercase;
-  font-style: normal;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 22px;
-}
-.header-panel__button-border {
-  width: 215px;
-  height: 49px;
-  fill: rgba(255, 255, 255, 0.04);
-  stroke: #fff;
-  stroke-opacity: 0.1;
-}
-.header-panel__button:hover .header-panel__button-border {
-  fill: rgba(255, 255, 255, 0.4);
-  stroke: #fff;
-  stroke-opacity: 1;
-  transition: 0.9s ease;
-}
+
 .header-panel__button-marks {
   position: relative;
   background-color: transparent;
@@ -234,11 +191,9 @@
   fill: none;
   opacity: 0.5;
   stroke: #fff;
-}
-.header-panel__button-marks:hover .header-panel__button-marks-svg {
-  opacity: 1;
   transition: 0.9s ease;
 }
+
 .header-panel__button-compare-count {
   display: flex;
   align-items: center;
@@ -250,6 +205,7 @@
   border-radius: 50%;
   bottom: 0;
   right: -5px;
+  transition: 0.9s ease;
 }
 .header-panel__user {
   position: relative;
@@ -259,6 +215,15 @@
   padding-left: 42px;
   cursor: pointer;
 }
+.header-panel__user::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  height: 92px;
+  width: 1px;
+  background-color: #ffffff;
+  opacity: 0.1;
+}
 .header-panel__overlay {
   position: absolute;
   top: -5px;
@@ -266,13 +231,12 @@
   bottom: -15px;
   right: -5px;
 }
-.header-panel__overlay:hover .header-popUp {
-  opacity: 1;
-  right: 0;
-  transition: 0.6s ease;
-  transform: scale(1);
-}
+
 .header-user-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: relative;
   width: 36px;
   height: 36px;
@@ -285,21 +249,71 @@
   content: '';
   z-index: 2;
   border-radius: 50%;
-  left: -2px;
-  right: -2px;
-  top: -2px;
-  bottom: -2px;
+  left: -1px;
+  right: -1px;
+  top: -1px;
+  bottom: -1px;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
 }
 
 .header-user-avatar {
   position: relative;
   z-index: 3;
-  width: 36px;
-  height: 36px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
 }
 
 .header-panel__user-name {
   color: #fff;
+}
+.header-panel__button-marks-hidden {
+  display: none;
+}
+.header-user__burger {
+  display: none;
+}
+.header-panel__user-block {
+  display: flex;
+  align-items: center;
+}
+.header-scroll {
+  transition: 0.9s ease;
+  background-color: #fff;
+}
+.header-logo-scroll {
+  fill: #22282d !important;
+  transition: 0.9s ease;
+}
+.header-link-scroll {
+  opacity: 0.5;
+  color: #22282d !important;
+  transition: 0.9s ease;
+}
+.header-button-border-scroll {
+  fill: #8e9fbc !important;
+  stroke: #fff !important;
+  transition: 0.9s ease;
+}
+.header-mark-scroll {
+  opacity: 1 !important;
+  stroke: #7a8084 !important;
+  transition: 0.9s ease;
+}
+.header-span-scroll {
+  background: #8e9fbc;
+  color: #fff;
+  transition: 0.9s ease;
+}
+.header-name-scroll {
+  color: #000 !important;
+  transition: 0.9s ease;
+}
+.header-burger-scroll::before {
+  background-color: #000 !important;
+  transition: 0.9s ease;
+}
+.header-burger-scroll::after {
+  background-color: #000 !important;
+  transition: 0.9s ease;
 }

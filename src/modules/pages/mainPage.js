@@ -8,6 +8,7 @@ class MainPage {
     this.main = new Main();
     this.footer = new Footer();
     this.addContent();
+    this.initHeader();
     this.initFilter();
     this.initJournalContent();
     this.initFooter();
@@ -15,6 +16,9 @@ class MainPage {
   addContent() {
     const body = document.querySelector('body');
     body.append(this.header.element, this.main.element, this.footer.element);
+  }
+  initHeader() {
+    this.header.initScrollTop();
   }
   initFilter() {
     this.main.filter.initSelectType();
@@ -25,6 +29,7 @@ class MainPage {
   initJournalContent() {
     this.main.journal.initContent();
     this.main.journal.addEventListenerToWrapperTabs();
+    this.main.journal.addEventListenerToWrapperTabsTablet();
   }
   initFooter() {
     this.footer.addEventListenerToCheckBlock();

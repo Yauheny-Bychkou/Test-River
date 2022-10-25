@@ -1,3 +1,21 @@
+@media (min-width: 1023px) {
+  .swiper-slide-tabs:hover a {
+    color: #fff;
+    transition: 0.9s ease;
+  }
+  .swiper-slide-tabs-active:hover a {
+    color: #8e9fbc;
+    transition: 0.9s ease;
+  }
+  .swiper-slide-tabs:hover {
+    background-color: #8e9fbc;
+    transition: 0.9s ease;
+  }
+  .swiper-slide-tabs-active:hover {
+    background-color: #fff;
+    transition: 0.9s ease;
+  }
+}
 @media (max-width: 1700px) {
   .journal-wrapper-container__all-bottom-mambo {
     flex-shrink: 0.95;
@@ -29,5 +47,60 @@
     width: 100%;
     height: 100%;
     padding-right: 0;
+  }
+  .swiper-tabs {
+    display: block;
+    padding: 0 5px;
+  }
+  .journal-wrapper__nav {
+    display: none;
+  }
+  .tabs-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+  .swiper-slide-tabs {
+    position: relative;
+    padding: 10px 32px;
+    width: auto !important;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.9s ease;
+    margin-right: 10px;
+  }
+  .swiper-slide-tabs__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  .swiper-slide-tabs-active {
+    background-color: #8e9fbc;
+    border: 1px solid #8e9fbc;
+    transition: 0.9s ease;
+  }
+  .swiper-slide-link {
+    color: #22282d;
+    transition: 0.9s ease;
+  }
+  .swiper-slide-link-active {
+    color: #fff;
+    transition: 0.9s ease;
+  }
+  .journal-wrapper__slider-block {
+    width: 100%;
+  }
+  .journal-wrapper__slider-nav {
+    max-width: 750px;
+    margin: 0 auto;
   }
 }
