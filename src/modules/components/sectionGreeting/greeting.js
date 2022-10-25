@@ -10,6 +10,9 @@ class Greeting {
   addContent() {
     this.element.innerHTML = `
       <div class="greeting-wrapper">
+      <div class="container-greeting">  
+        <span class="greeting-wrapper-span">yachting</span>
+      </div>
       <svg class="greeting-wrapper-svg" width="378" height="378" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#a)" fill="#fff" fill-opacity=".5">
           <path

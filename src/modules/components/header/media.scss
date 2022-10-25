@@ -23,6 +23,23 @@
     opacity: 0.5;
     transition: 0.9s ease;
   }
+  .header-logo-scroll:hover {
+    opacity: 0.5;
+    fill: #22282d !important;
+  }
+  .header-panel__nav-item:hover .header-link-scroll {
+    color: gray !important;
+    transition: 0.9s ease;
+  }
+  .header-button-scroll:hover svg {
+    fill: #000 !important;
+    stroke: #fff !important;
+    transition: 0.9s ease;
+  }
+  .header-panel__button-marks:hover .header-mark-scroll {
+    stroke: #000 !important;
+    transition: 0.9s ease;
+  }
 }
 @media (max-width: 1500px) {
   .header-panel__nav {
@@ -78,7 +95,26 @@
     background-color: #fff;
     transition: 0.9s ease;
   }
+  .header-user__burger-active::before {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+  .header-user__burger-active::after {
+    bottom: 35%;
+    transform: rotate(45deg);
+  }
   .header-panel__user {
     margin-right: 36px;
+  }
+}
+@media (max-width: 640px) {
+  .header-panel__buttons-marks {
+    display: none;
+  }
+  .header-panel__user {
+    display: none;
+  }
+  .header-user-image-mobile {
+    display: block;
   }
 }

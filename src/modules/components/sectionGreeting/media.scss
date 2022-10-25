@@ -6,4 +6,34 @@
   .greeting-wrapper-svg {
     display: none;
   }
+  .greeting-wrapper__title {
+    font-size: 52px;
+    line-height: 63px;
+  }
+  .greeting-wrapper__block {
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+  }
+}
+@media (max-width: 799px) {
+  .greeting-wrapper__block {
+    padding-bottom: 18px;
+    margin-bottom: 21px;
+  }
+  .greeting-wrapper__title {
+    font-size: 36px;
+    line-height: 48px;
+    width: 299px;
+    text-align: center;
+  }
+  .greeting-wrapper__description {
+    font-size: 14px;
+    line-height: 26px;
+    width: 295px;
+    text-align: center;
+  }
+  .panel__button-greeting {
+    display: block;
+    margin-top: 56px !important;
+  }
 }

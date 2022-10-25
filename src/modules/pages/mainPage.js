@@ -19,6 +19,7 @@ class MainPage {
   }
   initHeader() {
     this.header.initScrollTop();
+    this.header.addEventListenerToBurgerButton();
   }
   initFilter() {
     this.main.filter.initSelectType();

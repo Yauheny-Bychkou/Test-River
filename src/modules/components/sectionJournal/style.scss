@@ -3,8 +3,16 @@
   padding: 0 20px;
   margin: 0 auto;
   padding-top: 58px;
+}
+.journal-container-top {
+  padding-bottom: 0;
+}
+.journal-content {
   padding-bottom: 70px;
 }
+// .journal-wrapper-container-slider {
+//   padding-bottom: 70px;
+// }
 .journal-wrapper-container {
   max-width: 1865px;
   padding: 0 20px;
@@ -18,9 +26,10 @@
 .journal-wrapper__goto {
   position: absolute;
   right: 0;
-  top: 0;
+  top: 15px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .journal-wrapper__goto-block {
   margin-right: 18px;
@@ -30,11 +39,13 @@
   font-size: 16px;
   line-height: 22px;
   margin-bottom: 7px;
+  transition: 0.9s ease;
 }
 .journal-wrapper__goto-line {
   width: 100%;
   height: 1px;
   background-color: #e5e5e5;
+  transition: 0.9s ease;
 }
 .journal-wrapper__goto-button {
   width: 32px;
@@ -46,6 +57,7 @@
 .journal-wrapper__goto-button-svg {
   fill: none;
   stroke: #22282d;
+  transition: 0.9s ease;
 }
 .journal-wrapper__title {
   text-align: center;
@@ -187,6 +199,11 @@
   height: 100%;
   padding: 58px 57px 67px 73px;
   color: #fff;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
 }
 .slide-boat-img {
   position: absolute;
@@ -230,6 +247,14 @@
 }
 .slide-boat__name {
   margin-bottom: 5px;
+  font-size: 32px;
+  line-height: 44px;
+}
+.slide-boat__tag {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
 }
 .slide-boat__line {
   width: 100%;
@@ -254,6 +279,15 @@
   position: relative;
   padding: 58px 50px 46px 48px;
   color: #fff;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+}
+.slide-small__name {
+  font-size: 24px;
+  line-height: 28px;
 }
 .slide-small__img {
   position: absolute;
@@ -283,6 +317,10 @@
 }
 .slide-small__tag {
   margin-bottom: 9px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
 }
 .slide-small__buttons {
   margin-bottom: 20px;

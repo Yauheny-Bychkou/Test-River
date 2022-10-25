@@ -207,10 +207,10 @@ class Footer {
               <div class="footer-subscribe__menu-contaiter">
                 <ul class="footer-subscribe__menu-list">
                   <li class="footer-subscribe__menu-item">
-                    <a class="footer-subscribe__menu-link" href="">point1</a>
+                    <a class="footer-subscribe__menu-link" href="">Каталог судов</a>
                   </li>
                   <li class="footer-subscribe__menu-item">
-                    <a class="footer-subscribe__menu-link" href="">point2</a>
+                    <a class="footer-subscribe__menu-link" href="">Верфи</a>
                   </li>
                 </ul>
               </div>
@@ -233,10 +233,10 @@ class Footer {
               <div class="footer-subscribe__menu-contaiter">
                 <ul class="footer-subscribe__menu-list">
                   <li class="footer-subscribe__menu-item">
-                    <a class="footer-subscribe__menu-link" href="">point1</a>
+                    <a class="footer-subscribe__menu-link" href="">Маркет судов</a>
                   </li>
                   <li class="footer-subscribe__menu-item">
-                    <a class="footer-subscribe__menu-link" href="">point2</a>
+                    <a class="footer-subscribe__menu-link" href="">Компании по продаже лодок</a>
                   </li>
                 </ul>
               </div>
@@ -259,10 +259,10 @@ class Footer {
               <div class="footer-subscribe__menu-contaiter">
                 <ul class="footer-subscribe__menu-list">
                   <li class="footer-subscribe__menu-item">
-                    <a class="footer-subscribe__menu-link" href="">point1</a>
+                    <a class="footer-subscribe__menu-link" href="">Подписка</a>
                   </li>
                   <li class="footer-subscribe__menu-item">
-                    <a class="footer-subscribe__menu-link" href="">point2</a>
+                    <a class="footer-subscribe__menu-link" href="">О нас</a>
                   </li>
                 </ul>
               </div>
@@ -285,10 +285,10 @@ class Footer {
               <div class="footer-subscribe__menu-contaiter">
                 <ul class="footer-subscribe__menu-list">
                   <li class="footer-subscribe__menu-item">
-                    <a class="footer-subscribe__menu-link" href="">point1</a>
+                    <a class="footer-subscribe__menu-link" href="">События</a>
                   </li>
                   <li class="footer-subscribe__menu-item">
-                    <a class="footer-subscribe__menu-link" href="">point2</a>
+                    <a class="footer-subscribe__menu-link" href="">Категория 2</a>
                   </li>
                 </ul>
               </div>

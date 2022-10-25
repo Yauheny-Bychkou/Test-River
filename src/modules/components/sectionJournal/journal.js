@@ -16,7 +16,7 @@ class Journal {
   }
   addContent() {
     this.element.innerHTML = `
-      <div class="journal-container">
+      <div class="journal-container journal-container-top">
       <div class="journal-wrapper">
         <div class="journal-wrapper__goto">
           <div class="journal-wrapper__goto-block">

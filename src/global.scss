@@ -74,3 +74,10 @@ ul {
   font-size: 12px;
   line-height: 22px;
 }
+.panel__button-greeting {
+  width: 215px;
+  margin-right: 0;
+}
+.panel__button-greeting::after {
+  content: 'найти';
+}

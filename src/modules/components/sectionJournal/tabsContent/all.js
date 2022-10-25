@@ -11,7 +11,7 @@ class All {
   }
   addContent() {
     this.element.innerHTML = `
-      <div class="journal-wrapper-container">
+    <div class="journal-wrapper-container">
       <div class="journal-wrapper-container__all-top">
         <div class="journal-wrapper-container__all-slider-horizontal">
           <div class="swiper swiper-horizontal">
@@ -100,9 +100,10 @@ class All {
     </div>
     <div class="journal-wrapper-container journal-wrapper-container-slider">
       <div class="journal-wrapper-container__all-bottom">
+        
         <div class="swiper swiper-photo">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide swiper-slide-bottom swiper-slide-bottom-none">
               <div class="slide-photo">
                 <img src="./girl.jpg" alt="girl" class="slide-photo__img" />
                 <div class="slide-photo__content">
@@ -114,7 +115,7 @@ class All {
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide swiper-slide-bottom">
               <div class="slide-photo-horizontal">
                 <img src="./mambo.jpg" alt="mambo" class="slide-photo-horizontal__img" />
                 <div class="slide-photo-horizontal__top">
@@ -196,14 +197,15 @@ class All {
     `;
   }
   initSliderTabs() {
-    // const swiper = new Swiper('.swiper-tabs', {
-    //   allowTouchMove: false,
-    //   modules: [Navigation],
-    //   direction: 'horizontal',
-    //   loop: true,
-    //   slidesPerView: 6,
-    //   spaceBetween: 10,
-    // });
+    if (window.innerWidth < 800) {
+      const swiper = new Swiper('.swiper-tabs', {
+        modules: [Navigation],
+        direction: 'horizontal',
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 'auto',
+      });
+    }
   }
   initHorizontalSlider() {
     const swiper = new Swiper('.swiper-horizontal', {
@@ -237,22 +239,34 @@ class All {
     });
   }
   initPhotoSlider() {
-    const swiper = new Swiper('.swiper-photo', {
+    let swiper = new Swiper('.swiper-photo', {
       modules: [Navigation],
       direction: 'horizontal',
       loop: true,
       slidesPerView: 2.5,
       spaceBetween: 46,
     });
-    // const mq = window.matchMedia('(max-width: 1300px)');
+    // const mq = window.matchMedia('(max-width: 750px)');
     // mq.addEventListener('change', (e) => {
-    //   // if (e.matches) {
-    //   //   swiper.destroy();
-    //   //   swiper = init(2.5, true);
-    //   // } else {
-    //   //   swiper.destroy();
-    //   //   swiper = init(3, false);
-    //   // }
+    //   if (e.matches) {
+    //     swiper.destroy();
+    //     swiper = new Swiper('.swiper-photo', {
+    //       modules: [Navigation],
+    //       direction: 'horizontal',
+    //       loop: true,
+    //       slidesPerView: 2.5,
+    //       spaceBetween: 10,
+    //     });
+    //   } else {
+    //     swiper.destroy();
+    //     swiper = new Swiper('.swiper-photo', {
+    //       modules: [Navigation],
+    //       direction: 'horizontal',
+    //       loop: true,
+    //       slidesPerView: 2.5,
+    //       spaceBetween: 46,
+    //     });
+    //   }
     // });
   }
 }

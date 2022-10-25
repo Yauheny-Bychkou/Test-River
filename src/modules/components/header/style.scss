@@ -10,6 +10,7 @@
   z-index: 3;
   transition: 0.9s ease;
 }
+
 .header-container {
   max-width: 1865px;
   padding: 0 20px;
@@ -316,4 +317,7 @@
 .header-burger-scroll::after {
   background-color: #000 !important;
   transition: 0.9s ease;
+}
+.header-user-image-mobile {
+  display: none;
 }

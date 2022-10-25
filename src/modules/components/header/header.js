@@ -11,7 +11,10 @@ class Header {
     this.element.innerHTML = `
      <div class="container header-container">
       <div class="header-wrapper">
-        <div class="logo">
+      <div class="header-user-image header-user-image-mobile">
+                      <img class="header-user-avatar" src="./ava.jpg" alt="user-avatar" />
+                    </div>
+        <div class="logo logo-desctop">
           <a href="" class="logo-link">
             <svg class="logo-link-svg-header" width="120" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -147,8 +150,10 @@ class Header {
     const headerSpanCount = document.querySelector('.header-panel__button-compare-count');
     const userName = document.querySelector('.header-panel__user-name');
     const headerBurger = document.querySelector('.header-user__burger');
+    const headerButton = document.querySelector('.panel__button-header');
     window.addEventListener('scroll', () => {
       if (window.scrollY > 1) {
+        console.log('test');
         header.classList.add('header-scroll');
         headerLogo.classList.add('header-logo-scroll');
         headerLink.forEach((item) => {
@@ -161,6 +166,7 @@ class Header {
         headerSpanCount.classList.add('header-span-scroll');
         userName.classList.add('header-name-scroll');
         headerBurger.classList.add('header-burger-scroll');
+        headerButton.classList.add('header-button-scroll');
       } else {
         header.classList.remove('header-scroll');
         headerLogo.classList.remove('header-logo-scroll');
@@ -174,7 +180,14 @@ class Header {
         headerSpanCount.classList.remove('header-span-scroll');
         userName.classList.remove('header-name-scroll');
         headerBurger.classList.remove('header-burger-scroll');
+        headerButton.classList.remove('header-button-scroll');
       }
+    });
+  }
+  addEventListenerToBurgerButton() {
+    const button = document.querySelector('.header-user__burger');
+    button.addEventListener('click', () => {
+      button.classList.toggle('header-user__burger-active');
     });
   }
 }

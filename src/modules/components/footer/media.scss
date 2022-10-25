@@ -115,6 +115,7 @@
   }
   .footer-subscribe__menu-block {
     position: relative;
+    cursor: pointer;
     // overflow: hidden;
   }
   .footer-subscribe__menu-block-overlay {
@@ -160,6 +161,12 @@
   }
 }
 @media (max-width: 750px) {
+  .footer-subscribe {
+    padding-top: 0;
+  }
+  .footer {
+    border: none;
+  }
   .footer-left {
     display: none;
   }

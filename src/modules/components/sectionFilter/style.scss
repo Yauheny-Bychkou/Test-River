@@ -50,6 +50,7 @@
   cursor: pointer;
   margin-bottom: 5px;
   color: #7a8084;
+  transition: 0.9s ease;
 }
 .filter-block__span-from {
   color: #7a8084;
@@ -60,10 +61,7 @@
 .filter-block__item:last-child {
   margin-bottom: 0;
 }
-.filter-block__item:hover {
-  background-color: gray;
-  transition: 0.9s ease;
-}
+
 .filter-block__button {
   display: flex;
   flex-direction: column;
@@ -74,6 +72,7 @@
   width: 31.52px;
   height: 31.52px;
   border-radius: 50%;
+  transition: 0.9s ease;
 }
 .filter-line {
   width: 100%;
@@ -89,14 +88,12 @@
   color: #fff;
   letter-spacing: 0.6px;
   border: none;
-}
-.filter-block__button-search:hover {
   transition: 0.9s ease;
-  background-color: gray;
-  color: #8e9fbc;
 }
+
 .filter-block__select {
   position: relative;
+  cursor: pointer;
 }
 .filter-block__price {
   display: flex;
@@ -129,6 +126,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin-right: 10px;
   background-color: transparent;
+  transition: 0.9s ease;
 }
 .filter-block__button-price-overlay {
   position: absolute;
@@ -137,30 +135,15 @@
   top: 0;
   bottom: 0;
 }
-.filter-block__button-price:hover {
-  background-color: #8e9fbc;
-  border: none;
-  transition: 0.9s ease;
-}
-.filter-block__button-price:hover svg {
-  fill: #fff;
-  transition: 0.9s ease;
-}
+
 .filter-block__button-price:last-child {
   margin-right: 0;
 }
 .filter-block__button-price-active {
   background-color: #8e9fbc;
-}
-.filter-block__button-price-active:hover {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: transparent;
   transition: 0.9s ease;
 }
-.filter-block__button-price-active:hover svg {
-  fill: #22282d;
-  transition: 0.9s ease;
-}
+
 .container-range {
   position: relative;
   width: 100%;
@@ -249,6 +232,8 @@ input[type='range']:active::-moz-range-thumb {
 }
 .filter-block__button-arrow {
   transition: 1s ease;
+  fill: none;
+  stroke: #22282d;
 }
 .filter-block__button-arrow-active {
   transform: rotate(180deg);
@@ -282,6 +267,7 @@ input[type='range']:active::-moz-range-thumb {
   padding: 0;
   border: none;
   background-color: transparent;
+  transition: 0.9s ease;
 }
 .filter-container-advanced__button-square {
   position: absolute;
@@ -304,18 +290,4 @@ input[type='range']:active::-moz-range-thumb {
   fill: none;
   stroke: #cfd1d3;
   margin-left: -0.1px;
-}
-.filter-container-advanced__button:hover .filter-container-advanced__button-line {
-  stroke: #8e9fbc;
-  stroke-opacity: 1;
-  transition: 0.9s ease;
-}
-.filter-container-advanced__button:hover .filter-container-advanced__button-square {
-  background-color: #8e9fbc;
-  transition: 0.9s ease;
-  border: 1px solid #8e9fbc;
-}
-.filter-container-advanced__button:hover .filter-container-advanced__button-plus {
-  stroke: #fff;
-  transition: 0.9s ease;
 }
