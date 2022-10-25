@@ -10,7 +10,9 @@
   z-index: 3;
 }
 .header-container {
-  padding: 0 32px 0 51px;
+  max-width: 1865px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 .header-title {
   margin: 0;
@@ -33,6 +35,7 @@
   height: 273px;
   transform: scale(0);
   z-index: 4;
+  transition: 0.2s ease;
 }
 .header-popUp-wrapper {
   padding: 30px 22px 25px 31px;
@@ -125,6 +128,10 @@
   font-weight: 400;
   font-size: 16px;
   color: #7a8084;
+}
+.header-popUp__item:hover .header-popUp__link {
+  color: #000;
+  transition: 0.9s ease;
 }
 .header-popUp__count {
   width: 24px;

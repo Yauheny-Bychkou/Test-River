@@ -9,7 +9,8 @@ button {
 }
 h2,
 h3,
-h4 {
+h4,
+p {
   margin: 0;
 }
 ul {
@@ -18,10 +19,23 @@ ul {
   list-style: none;
 }
 .container {
-  max-width: 1900px;
-  margin: 0 auto;
 }
 .logo-link {
   color: #fff;
   text-transform: uppercase;
+}
+.main {
+  overflow: hidden;
+}
+.logo-link-svg-header {
+  fill: #fff;
+  transition: 0.9s ease;
+}
+.logo-link-svg-footer {
+  fill: #22282d;
+  transition: 0.9s ease;
+}
+.logo-link:hover svg {
+  fill: #7a8084;
+  transition: 0.9s ease;
 }

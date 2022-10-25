@@ -1,0 +1,193 @@
+@media (min-width: 1023px) {
+  .footer-subscribe__agree-check:hover {
+    background-color: #e5e5e5;
+    border: 1px solid #000;
+    transition: 0.9s ease;
+  }
+  .footer-subscribe__mail:hover input {
+    color: #000;
+    transition: 0.9s ease;
+  }
+  .footer-subscribe__mail:hover svg {
+    stroke: #7a8084;
+    transition: 0.9s ease;
+  }
+  .footer-left__social-link:hover svg {
+    transition: 0.9s ease;
+    fill: #e1e1e2;
+  }
+  .footer-subscribe__button:hover svg {
+    transition: 0.9s ease;
+    fill: #7a8084;
+    stroke: #000;
+  }
+  .footer-links__block-item:hover a {
+    color: #000;
+    transition: 0.9s ease;
+  }
+  .footer-left__social-link:hover {
+    border: 1px solid #0c2340;
+    background-color: #0c2340;
+    transition: 0.9s ease;
+  }
+  .footer-breadcrumbs__link:hover {
+    color: #000;
+    transition: 0.9s ease;
+  }
+  .footer-subscribe__menu-block:hover .footer-subscribe__menu-block-name {
+    color: #7a8084;
+    transition: 0.9s ease;
+  }
+  .footer-subscribe__menu-block:hover .footer-subscribe__menu-block-svg {
+    stroke: #fff;
+    transition: 0.9s ease;
+  }
+  .footer-subscribe__menu-block:hover .footer-subscribe__menu-block-button {
+    background-color: #7a8084;
+    border: 1px solid #7a8084;
+    transition: 0.9s ease;
+  }
+}
+@media (max-width: 1500px) {
+  .footer-links__block {
+    margin-right: 40px;
+  }
+}
+@media (max-width: 1300px) {
+  .footer-subscribe__menu-list {
+    padding-top: 20px;
+    padding-left: 35px;
+    background-color: #fff;
+    border: none;
+  }
+  .footer-subscribe__menu-contaiter {
+    position: relative;
+    z-index: 3;
+    background-color: #fff;
+    border: none;
+    height: 0;
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.9s ease;
+    z-index: 3;
+  }
+  .footer-subscribe__menu-item {
+    margin-bottom: 10px;
+  }
+  .footer-subscribe__menu-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #7a8084;
+  }
+  .footer-subscribe__menu-item:last-child {
+    margin-bottom: 0;
+  }
+  .footer-subscribe__menu-contaiter-visible {
+    height: 100%;
+    opacity: 1;
+    transition: 0.9s ease;
+    transform: scale(1);
+  }
+  .footer-subscribe__menu-block-svg {
+    fill: none;
+    stroke: #22282d;
+    transition: 0.9s ease;
+  }
+  .footer-subscribe__menu-block-svg-active {
+    transform: rotate(180deg);
+    transition: 0.9s ease;
+  }
+  .footer-subscribe {
+    padding-bottom: 48px;
+  }
+  .footer-links {
+    display: none;
+  }
+  .footer-subscribe {
+    width: 100%;
+  }
+  .footer-subscribe__agree-description {
+    width: 305px;
+  }
+  .footer-subscribe__button {
+    margin-bottom: 23px;
+  }
+  .footer-subscribe__menu-block {
+    position: relative;
+    // overflow: hidden;
+  }
+  .footer-subscribe__menu-block-overlay {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  .footer-subscribe__menu-block-content {
+    display: flex;
+    align-items: center;
+  }
+  .footer-subscribe__menu-block {
+    padding: 19px 0px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .footer-subscribe__menu-block:last-child {
+    padding-bottom: 10px;
+    border-bottom: none;
+  }
+  .footer-subscribe__menu {
+    display: block;
+  }
+  .footer-subscribe__menu-block-button {
+    margin-right: 32px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #e5e5e5;
+    background-color: transparent;
+    padding: 0;
+    transition: 0.9s ease;
+  }
+  .footer-subscribe__menu-block-name {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    transition: 0.9s ease;
+  }
+}
+@media (max-width: 750px) {
+  .footer-left {
+    display: none;
+  }
+  .footer-subscribe {
+    border: none;
+    padding-left: 0;
+  }
+  .footer-subscribe__button {
+    display: none;
+  }
+  .footer-subscribe__menu-block-content {
+    justify-content: space-between;
+  }
+  .footer-subscribe__menu-block-button {
+    order: 1;
+  }
+  .footer-subscribe__menu-block-button {
+    display: none;
+  }
+  .footer-subscribe__menu-block-button-visible {
+    display: block;
+  }
+}
+@media (max-width: 450px) {
+  .footer-breadcrumbs {
+    flex-direction: column;
+  }
+  .footer-breadcrumbs__year {
+    margin-bottom: 5px;
+  }
+}

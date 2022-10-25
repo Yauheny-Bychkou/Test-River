@@ -36,6 +36,7 @@
   position: absolute;
   transform: scale(0);
   bottom: -95px;
+  transition: 0.9s ease;
 }
 .filter-block__list-visible {
   transition: 0.9s ease;
@@ -163,7 +164,7 @@
 .container-range {
   position: relative;
   width: 100%;
-  bottom: -36px;
+  bottom: -33px;
   transform: translate(0px, 0.4px);
 }
 input[type='range'] {
@@ -246,6 +247,75 @@ input[type='range']:active::-moz-range-thumb {
 .filter-block__button-svg-noactive {
   fill: #22282d;
 }
+.filter-block__button-arrow {
+  transition: 1s ease;
+}
 .filter-block__button-arrow-active {
   transform: rotate(180deg);
+  transition: 1s ease;
+}
+.filter-line {
+  margin-bottom: 31px;
+}
+.filter-container-advanced {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.filter-container-advanced__button-line {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: 0.1;
+}
+.filter-container-advanced__title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.6px;
+  color: rgba(34, 40, 45, 0.5);
+}
+.filter-container-advanced__button {
+  position: relative;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.filter-container-advanced__button-square {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-55%, 25%);
+}
+.filter-container-advanced__button-plus {
+  width: 10px;
+  height: 10px;
+  fill: none;
+  stroke: #cfd1d3;
+  margin-left: -0.1px;
+}
+.filter-container-advanced__button:hover .filter-container-advanced__button-line {
+  stroke: #8e9fbc;
+  stroke-opacity: 1;
+  transition: 0.9s ease;
+}
+.filter-container-advanced__button:hover .filter-container-advanced__button-square {
+  background-color: #8e9fbc;
+  transition: 0.9s ease;
+  border: 1px solid #8e9fbc;
+}
+.filter-container-advanced__button:hover .filter-container-advanced__button-plus {
+  stroke: #fff;
+  transition: 0.9s ease;
 }
