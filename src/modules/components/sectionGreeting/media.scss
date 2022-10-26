@@ -1,4 +1,7 @@
 @media (max-width: 1300px) {
+  .greeting {
+    height: 602px;
+  }
   .panel__button-greeting {
     display: block;
     margin-top: 65px;
@@ -35,5 +38,10 @@
   .panel__button-greeting {
     display: block;
     margin-top: 56px !important;
+  }
+}
+@media (max-width: 750px) {
+  .greeting {
+    height: 676px;
   }
 }
