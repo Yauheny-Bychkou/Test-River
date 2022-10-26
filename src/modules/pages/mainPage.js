@@ -1,21 +1,32 @@
 import Footer from '../components/footer/footer';
 import Header from '../components/header/header';
 import Main from '../components/main/main';
+import Preloader from '../components/preloader/preloader';
 
 class MainPage {
   constructor() {
+    this.preloader = new Preloader();
     this.header = new Header();
     this.main = new Main();
     this.footer = new Footer();
     this.addContent();
+    this.initPreloader();
     this.initHeader();
     this.initFilter();
     this.initJournalContent();
     this.initFooter();
   }
+  initPreloader() {
+    window.onload = () => {
+      setTimeout(() => {
+        this.preloader.stopPreloader();
+      }, 500);
+    };
+  }
   addContent() {
     const body = document.querySelector('body');
-    body.append(this.header.element, this.main.element, this.footer.element);
+    body.append();
+    body.append(this.preloader.element, this.header.element, this.main.element, this.footer.element);
   }
   initHeader() {
     this.header.initMobileMenu();
