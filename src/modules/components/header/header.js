@@ -334,8 +334,8 @@ class Header {
     const headerLink = document.querySelectorAll('.header-panel__nav-link');
     const headerButtonBorder = document.querySelector('.panel__button-border-header');
     const headerButtonsMark = document.querySelectorAll('.header-panel__button-marks-svg');
-    const headerSpanCount = document.querySelector('.header-panel__button-compare-count');
-    const userName = document.querySelector('.header-panel__user-name');
+    const headerSpanCount = document.querySelectorAll('.header-panel__button-compare-count')[1];
+    const userName = document.querySelectorAll('.header-panel__user-name')[1];
     const headerBurger = document.querySelector('.header-user__burger');
     const headerButton = document.querySelector('.panel__button-header');
     window.addEventListener('scroll', () => {
@@ -349,6 +349,7 @@ class Header {
         headerButtonsMark.forEach((item) => {
           item.classList.add('header-mark-scroll');
         });
+        console.log(headerSpanCount);
         headerSpanCount.classList.add('header-span-scroll');
         userName.classList.add('header-name-scroll');
         headerBurger.classList.add('header-burger-scroll');
