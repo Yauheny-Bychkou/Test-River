@@ -252,6 +252,7 @@ input[type='range']:active::-moz-range-thumb {
   fill: none;
   stroke: #000;
   stroke-opacity: 0.1;
+  transition: 0.9s ease;
 }
 .filter-container-advanced__title {
   font-family: 'Roboto';
@@ -284,6 +285,7 @@ input[type='range']:active::-moz-range-thumb {
   bottom: 0;
   left: 50%;
   transform: translate(-55%, 25%);
+  transition: 0.9s ease;
 }
 .filter-container-advanced__button-plus {
   width: 10px;

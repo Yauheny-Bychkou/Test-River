@@ -111,6 +111,7 @@ class Journal {
     tabAll.initVerticalSlider();
     tabAll.initPhotoSlider();
     tabAll.initSliderTabs();
+    tabAll.initMobileSliders();
   }
   addEventListenerToWrapperTabsTablet() {
     const swiperTabs = document.querySelector('.swiper-tabs');

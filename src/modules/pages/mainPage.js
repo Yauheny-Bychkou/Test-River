@@ -18,6 +18,7 @@ class MainPage {
     body.append(this.header.element, this.main.element, this.footer.element);
   }
   initHeader() {
+    this.header.initMobileMenu();
     this.header.initScrollTop();
     this.header.addEventListenerToBurgerButton();
   }

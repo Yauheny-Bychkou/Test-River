@@ -78,3 +78,6 @@ ul {
 .panel__button-greeting::after {
   content: 'найти';
 }
+.scroll--hidden {
+  overflow-y: hidden !important;
+}

@@ -1,6 +1,6 @@
 @media (min-width: 1023px) {
   .logo-link:hover svg {
-    fill: blue;
+    fill: #8e9fbc;
     opacity: 0.3;
     transition: 0.9s ease;
   }
@@ -26,7 +26,7 @@
   }
   .header-panel__nav-item:hover .header-panel__nav-link {
     // opacity: 0.5;
-    color: blue !important;
+    color: #8e9fbc !important;
     opacity: 0.3 !important;
     transition: 0.9s ease;
   }
@@ -35,17 +35,17 @@
     transition: 0.9s ease;
   }
   .header-logo-scroll:hover {
-    fill: blue !important;
+    fill: #8e9fbc !important;
     opacity: 0.3;
     transition: 0.9s ease;
   }
   .header-panel__nav-item:hover .header-link-scroll {
-    color: blue !important;
+    color: #8e9fbc !important;
     opacity: 0.3 !important;
     transition: 0.9s ease;
   }
   .header-button-scroll:hover svg {
-    fill: #000 !important;
+    opacity: 0.5;
     stroke: #fff !important;
     transition: 0.9s ease;
   }
@@ -123,6 +123,9 @@
 @media (max-width: 640px) {
   .header-panel__buttons-marks {
     display: none;
+  }
+  .header-panel__buttons-marks-mobile {
+    display: flex;
   }
   .header-panel__user {
     display: none;
