@@ -313,7 +313,6 @@ class Header {
     const buttonClose = document.querySelector('.header-mobile-menu__close');
 
     buttonClose.addEventListener('click', () => {
-      console.log(menu);
       menu.classList.remove('header-mobile-menu-visible');
       body.classList.remove('scroll--hidden');
     });
@@ -349,7 +348,6 @@ class Header {
         headerButtonsMark.forEach((item) => {
           item.classList.add('header-mark-scroll');
         });
-        console.log(headerSpanCount);
         headerSpanCount.classList.add('header-span-scroll');
         userName.classList.add('header-name-scroll');
         headerBurger.classList.add('header-burger-scroll');
