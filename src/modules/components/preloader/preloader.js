@@ -8,8 +8,10 @@ class Preloader {
   }
   addContent() {
     this.element.innerHTML = `
-      <h1 class="preloader-title">ITBOAT</h1>
-      <div class="preloader"></div>
+      <div class="load-wrapper">
+        <h1 class="preloader-title">ITBOAT</h1>
+        <div class="preloader"></div>
+      </div>
     `;
   }
   stopPreloader() {

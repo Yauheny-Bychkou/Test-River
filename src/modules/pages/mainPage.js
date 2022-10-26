@@ -25,7 +25,6 @@ class MainPage {
   }
   addContent() {
     const body = document.querySelector('body');
-    body.append();
     body.append(this.preloader.element, this.header.element, this.main.element, this.footer.element);
   }
   initHeader() {
