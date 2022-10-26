@@ -1,4 +1,27 @@
 @media (min-width: 1023px) {
+  .slide-boat:hover .slide-boat__name {
+    color: blue;
+    opacity: 0.6;
+    transition: 0.9s ease;
+  }
+  .slide-small:hover .slide-small__name {
+    color: blue;
+    opacity: 0.6;
+    transition: 0.9s ease;
+  }
+  .slide-photo-horizontal:hover .slide-photo-horizontal__name {
+    color: blue;
+    opacity: 0.6;
+    transition: 0.9s ease;
+  }
+  .slide-photo:hover .slide-photo__img {
+    box-shadow: 10px 10px 10px #000;
+    transition: 0.9s ease;
+  }
+  .slide-photo-horizontal:hover .slide-photo-horizontal__img {
+    box-shadow: 10px 10px 10px #000;
+    transition: 0.9s ease;
+  }
   .swiper-slide-tabs:hover a {
     color: #fff;
     transition: 0.9s ease;

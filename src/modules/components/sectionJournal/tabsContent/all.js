@@ -7,6 +7,7 @@ class All {
   element = document.createElement('div');
   constructor() {
     this.element.classList.add('journal-wrapper__all');
+    this.element.setAttribute('data-aos', 'fade-up');
     this.addContent();
   }
   addContent() {
@@ -99,7 +100,7 @@ class All {
       </div>
     </div>
     <div class="journal-wrapper-container journal-wrapper-container-slider">
-      <div class="journal-wrapper-container__all-bottom">
+      <div data-aos="fade-up" class="journal-wrapper-container__all-bottom">
         
         <div class="swiper swiper-photo">
           <div class="swiper-wrapper">

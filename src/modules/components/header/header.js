@@ -28,18 +28,23 @@ class Header {
             <ul class="header-panel__nav-list">
               <li class="header-panel__nav-item">
                 <a href="" class="header-panel__nav-link">журнал</a>
+                <div class="header-panel__nav-line"></div>
               </li>
               <li class="header-panel__nav-item">
                 <a href="" class="header-panel__nav-link">каталог</a>
+                <div class="header-panel__nav-line"></div>
               </li>
               <li class="header-panel__nav-item">
                 <a href="" class="header-panel__nav-link">маркет</a>
+                <div class="header-panel__nav-line"></div>
               </li>
               <li class="header-panel__nav-item">
                 <a href="" class="header-panel__nav-link">события</a>
+                <div class="header-panel__nav-line"></div>
               </li>
               <li class="header-panel__nav-item">
                 <a href="" class="header-panel__nav-link">о нас</a>
+                <div class="header-panel__nav-line"></div>
               </li>
             </ul>
           </nav>
@@ -153,7 +158,6 @@ class Header {
     const headerButton = document.querySelector('.panel__button-header');
     window.addEventListener('scroll', () => {
       if (window.scrollY > 1) {
-        console.log('test');
         header.classList.add('header-scroll');
         headerLogo.classList.add('header-logo-scroll');
         headerLink.forEach((item) => {

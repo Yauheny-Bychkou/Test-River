@@ -171,8 +171,17 @@
   color: #fff;
   text-transform: uppercase;
   font-size: 14px;
+  transition: 0.9s ease;
+  padding-bottom: 3px;
+  transition: 0.9s ease;
 }
-
+.header-panel__nav-line {
+  width: 0%;
+  height: 1px;
+  background-color: blue;
+  opacity: 0.3;
+  transition: 0.9s ease;
+}
 .header-panel__buttons-marks {
   display: flex;
   align-items: center;
@@ -281,6 +290,7 @@
 .header-scroll {
   transition: 0.9s ease;
   background-color: #fff;
+  box-shadow: 15px 15px 15px #000;
 }
 .header-logo-scroll {
   fill: #22282d !important;

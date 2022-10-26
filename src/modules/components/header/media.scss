@@ -1,4 +1,9 @@
 @media (min-width: 1023px) {
+  .logo-link:hover svg {
+    fill: blue;
+    opacity: 0.3;
+    transition: 0.9s ease;
+  }
   .header-popUp__item:hover .header-popUp__link {
     color: #000;
     transition: 0.9s ease;
@@ -20,15 +25,23 @@
     transition: 0.9s ease;
   }
   .header-panel__nav-item:hover .header-panel__nav-link {
-    opacity: 0.5;
+    // opacity: 0.5;
+    color: blue !important;
+    opacity: 0.3 !important;
+    transition: 0.9s ease;
+  }
+  .header-panel__nav-item:hover .header-panel__nav-line {
+    width: 100%;
     transition: 0.9s ease;
   }
   .header-logo-scroll:hover {
-    opacity: 0.5;
-    fill: #22282d !important;
+    fill: blue !important;
+    opacity: 0.3;
+    transition: 0.9s ease;
   }
   .header-panel__nav-item:hover .header-link-scroll {
-    color: gray !important;
+    color: blue !important;
+    opacity: 0.3 !important;
     transition: 0.9s ease;
   }
   .header-button-scroll:hover svg {
