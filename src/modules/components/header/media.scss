@@ -34,14 +34,17 @@
     width: 100%;
     transition: 0.9s ease;
   }
+  .header-panel__nav-item-scroll:hover .header-panel__nav-line-scroll {
+    background-color: #000 !important;
+  }
   .header-logo-scroll:hover {
     fill: #8e9fbc !important;
     opacity: 0.3;
     transition: 0.9s ease;
   }
-  .header-panel__nav-item:hover .header-link-scroll {
-    color: #8e9fbc !important;
-    opacity: 0.3 !important;
+  .header-panel__nav-item-scroll:hover .header-link-scroll {
+    color: #000 !important;
+    opacity: 1 !important;
     transition: 0.9s ease;
   }
   .header-button-scroll:hover svg {

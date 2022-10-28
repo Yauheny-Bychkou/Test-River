@@ -337,9 +337,18 @@ class Header {
     const headerSpanCount = document.querySelectorAll('.header-panel__button-compare-count')[1];
     const userName = document.querySelectorAll('.header-panel__user-name')[1];
     const headerBurger = document.querySelector('.header-user__burger');
+    const collcetItems = document.querySelectorAll('.header-panel__nav-item');
     const headerButton = document.querySelector('.panel__button-header');
+    const collectLines = document.querySelectorAll('.header-panel__nav-line');
+
     window.addEventListener('scroll', () => {
       if (window.scrollY > 1) {
+        collectLines.forEach((item) => {
+          item.classList.add('header-panel__nav-line-scroll');
+        });
+        collcetItems.forEach((item) => {
+          item.classList.add('header-panel__nav-item-scroll');
+        });
         header.classList.add('header-scroll');
         headerLogo.classList.add('header-logo-scroll');
         headerLink.forEach((item) => {
@@ -367,6 +376,12 @@ class Header {
         userName.classList.remove('header-name-scroll');
         headerBurger.classList.remove('header-burger-scroll');
         headerButton.classList.remove('header-button-scroll');
+        collcetItems.forEach((item) => {
+          item.classList.remove('header-panel__nav-item-scroll');
+        });
+        collectLines.forEach((item) => {
+          item.classList.remove('header-panel__nav-line-scroll');
+        });
       }
     });
   }
