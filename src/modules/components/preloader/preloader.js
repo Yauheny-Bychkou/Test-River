@@ -18,5 +18,9 @@ class Preloader {
     const loader = document.querySelector('.load');
     loader.classList.add('load-hidden');
   }
+  removePreloader() {
+    const loader = document.querySelector('.load');
+    loader.classList.add('load-none');
+  }
 }
 export default Preloader;

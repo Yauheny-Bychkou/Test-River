@@ -34,13 +34,17 @@
   padding-bottom: 5px;
   padding-left: 5px;
   position: absolute;
-  transform: scale(0);
-  bottom: -95px;
+  opacity: 0;
+  bottom: 35px;
   transition: 0.9s ease;
+  pointer-events: none;
+  z-index: 9;
 }
 .filter-block__list-visible {
+  bottom: -95px;
+  opacity: 1;
   transition: 0.9s ease;
-  transform: scale(1);
+  pointer-events: auto;
 }
 .filter-block__panel {
   display: flex;

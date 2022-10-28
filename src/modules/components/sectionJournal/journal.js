@@ -18,7 +18,7 @@ class Journal {
     this.element.innerHTML = `
       <div class="journal-container journal-container-top">
       <div class="journal-wrapper">
-        <div data-aos="fade-down" class="journal-wrapper__goto">
+        <div data-aos="fade-up" data-aos-duration="1700" class="journal-wrapper__goto">
           <div class="journal-wrapper__goto-block">
             <h3 class="journal-wrapper__goto-name">перейти в журнал</h3>
             <div class="journal-wrapper__goto-line"></div>
@@ -29,7 +29,7 @@ class Journal {
             </svg>
           </button>
         </div>
-        <h2 data-aos="fade-down" class="journal-wrapper__title">журнал</h2>
+        <h2 data-aos="fade-up" data-aos-duration="1700" class="journal-wrapper__title">журнал</h2>
         <div class="journal-wrapper__slider-block">
           <div class="journal-wrapper__slider-nav">
             <div class="swiper swiper-tabs">
@@ -63,7 +63,7 @@ class Journal {
           </div>
         </div>
         <nav class="journal-wrapper__nav">
-          <ul data-aos="fade-up" class="journal-wrapper__list">
+          <ul data-aos="fade-up" data-aos-duration="1700" class="journal-wrapper__list">
             <li class="journal-wrapper__item">
               все
               <div class="journal-wrapper__item-overlay"></div>
@@ -98,7 +98,7 @@ class Journal {
         </nav>
       </div>
     </div>
-    <div class="journal-content">
+    <div data-aos="fade-up" data-aos-duration="1700" class="journal-content ">
       <div class="journal-content-add"></div>
     </div>
     `;

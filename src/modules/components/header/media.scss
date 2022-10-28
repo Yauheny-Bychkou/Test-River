@@ -10,9 +10,9 @@
   }
   .header-panel__user:hover .header-popUp {
     opacity: 1;
-    right: 0;
-    transition: 0.6s ease;
-    transform: scale(1);
+    top: 65px;
+    transition: 0.9s ease;
+    pointer-events: auto;
   }
   .header-panel__button-marks:hover .header-panel__button-marks-svg {
     opacity: 1;

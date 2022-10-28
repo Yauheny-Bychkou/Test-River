@@ -7,7 +7,8 @@ class All {
   element = document.createElement('div');
   constructor() {
     this.element.classList.add('journal-wrapper__all');
-    this.element.setAttribute('data-aos', 'fade-up');
+    // this.element.setAttribute('data-aos', 'fade-up');
+    // this.element.setAttribute('data-aos-duration', '1500');
     this.addContent();
   }
   addContent() {
@@ -253,7 +254,7 @@ class All {
       </div>
     </div>
     <div class="journal-wrapper-container journal-wrapper-container-slider">
-      <div data-aos="fade-up" class="journal-wrapper-container__all-bottom">
+      <div  class="journal-wrapper-container__all-bottom">
         <div class="journal-wrapper-container__all-top-bottom">
           <div class="swiper swiper-mobile-bottom">
             <div class="swiper-wrapper">
@@ -345,7 +346,7 @@ class All {
             </div>
           </div>
         </div>
-        <div class="journal-wrapper-container__all-bottom-topics">
+        <div data-aos="fade-up" data-aos-duration="1700" class="journal-wrapper-container__all-bottom-topics">
           <div class="journal-wrapper-container__all-bottom-girl">
             <div class="slide-photo">
               <img src="./girl.jpg" alt="girl" class="slide-photo__img" />

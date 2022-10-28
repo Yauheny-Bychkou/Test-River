@@ -5,4 +5,5 @@ import './normalize.scss';
 import './aos.scss';
 
 AOS.init();
+
 new MainPage();

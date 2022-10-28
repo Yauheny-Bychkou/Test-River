@@ -40,15 +40,16 @@
 }
 .header-popUp {
   position: absolute;
-  bottom: -272px;
-  right: 0;
+  top: 0px;
+  left: -50px;
   background-color: #fff;
   border-radius: 4px;
   width: 253px;
   height: 273px;
-  transform: scale(0);
-  z-index: 4;
-  transition: 0.2s ease;
+  opacity: 0;
+  z-index: -1;
+  transition: 0.9s ease;
+  pointer-events: none;
 }
 .header-popUp-wrapper {
   padding: 30px 22px 25px 31px;
@@ -242,6 +243,7 @@
 }
 .header-panel__user {
   position: relative;
+  z-index: 5;
   display: flex;
   align-items: center;
   height: 100%;
@@ -313,7 +315,7 @@
 .header-scroll {
   transition: 0.9s ease;
   background-color: #fff;
-  box-shadow: 15px 15px 15px #000;
+  box-shadow: 0px 0px 5px 0px #000;
 }
 .header-logo-scroll {
   fill: #22282d !important;
@@ -363,6 +365,7 @@
 .header-mobile-menu {
   background-color: #fff;
   width: 375px;
+  height: 812px;
 }
 .header-mobile-menu__close {
   width: 20px;
@@ -482,7 +485,7 @@
   padding: 0;
 }
 .header-mobile-menu__footer-social {
-  margin-bottom: 26px;
+  margin-bottom: 31px;
 }
 .header-mobile-menu__footer-social-list {
   display: flex;

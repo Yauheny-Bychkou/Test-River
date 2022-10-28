@@ -6,6 +6,7 @@ class Filter {
   constructor() {
     this.element.classList.add('filter');
     this.element.setAttribute('data-aos', 'fade-up');
+    this.element.setAttribute('data-aos-duration', '1500');
     this.addContent();
     this.currencyFrom = 'rub';
     this.currencyTo = '';

@@ -260,6 +260,7 @@ class Header {
           <div class="header-panel__user">
             <div class="header-panel__overlay">
               <div class="header-popUp">
+              <div class="header-popUp__overlay"></div>
                 <div class="header-popUp-wrapper">
                   <div class="header-popUp__user">
                     <div class="header-user-image">

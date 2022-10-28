@@ -18,14 +18,34 @@ class MainPage {
   }
   initPreloader() {
     window.onload = () => {
-      setTimeout(() => {
-        this.preloader.stopPreloader();
-      }, 500);
+      Promise.resolve()
+        .then(() => {
+          setTimeout(() => {
+            this.preloader.stopPreloader();
+          }, 500);
+        })
+        .then(() => {
+          setTimeout(() => {
+            this.preloader.removePreloader();
+          }, 1000);
+        });
     };
   }
   addContent() {
     const body = document.querySelector('body');
     body.append(this.preloader.element, this.header.element, this.main.element, this.footer.element);
+    if (window.innerWidth < 1300) {
+      document.querySelector('.filter').removeAttribute('data-aos');
+      document.querySelector('.filter').removeAttribute('data-aos-duration');
+      document.querySelector('.journal-wrapper__goto').removeAttribute('data-aos');
+      document.querySelector('.journal-wrapper__goto').removeAttribute('data-aos-duration');
+      document.querySelector('.journal-wrapper__title').removeAttribute('data-aos');
+      document.querySelector('.journal-wrapper__title').removeAttribute('data-aos-duration');
+      document.querySelector('.journal-content').removeAttribute('data-aos');
+      document.querySelector('.journal-content').removeAttribute('data-aos-duration');
+      document.querySelector('.footer').removeAttribute('data-aos');
+      document.querySelector('.footer').removeAttribute('data-aos-duration');
+    }
   }
   initHeader() {
     this.header.initMobileMenu();
