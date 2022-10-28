@@ -4,7 +4,7 @@
   }
   .panel__button-greeting {
     display: block;
-    margin-top: 65px;
+    // margin-top: 65px;
   }
   .greeting-wrapper-svg {
     display: none;
@@ -37,7 +37,7 @@
   }
   .panel__button-greeting {
     display: block;
-    margin-top: 56px !important;
+    margin-top: 0 !important;
   }
 }
 @media (max-width: 750px) {

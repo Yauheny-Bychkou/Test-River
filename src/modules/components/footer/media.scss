@@ -1,4 +1,13 @@
 @media (min-width: 1023px) {
+  .footer-subscribe__button-wrapper:hover .panel__button-absolute-visible {
+    top: -100px;
+    transition: 0.9s ease;
+  }
+  .footer-subscribe__button-wrapper:hover .panel__button-absolute-hidden {
+    bottom: 0;
+    transition: 0.9s ease;
+    opacity: 1;
+  }
   .footer-subscribe__agree-check:hover {
     background-color: #e5e5e5;
     border: 1px solid #000;
@@ -109,6 +118,9 @@
     width: 305px;
   }
   .footer-subscribe__button {
+    margin-bottom: 0;
+  }
+  .footer-subscribe__button-wrapper {
     margin-bottom: 23px;
   }
   .footer-subscribe__menu-block {
@@ -171,6 +183,9 @@
   .footer-subscribe {
     border: none;
     padding-left: 0;
+  }
+  .footer-subscribe__button-wrapper {
+    display: none;
   }
   .footer-subscribe__button {
     display: none;

@@ -544,3 +544,34 @@
 .header-panel__nav-line-scroll {
   background-color: #000;
 }
+.header-logo-link {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  padding-top: 2px;
+}
+.logo-link__title-header {
+  position: relative;
+  color: #fff;
+  bottom: 0;
+  font-size: 35px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 25px;
+  transition: 0.9s ease;
+}
+.logo-link__title-header__hidden {
+  position: absolute;
+  bottom: -130%;
+  // top: 2px;
+  left: 0;
+  font-size: 35px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 25px;
+  transition: 0.9s ease;
+  color: #8e9fbc;
+}
+.logo-link__title-header-scroll {
+  color: #000;
+}

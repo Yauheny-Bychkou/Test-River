@@ -24,7 +24,7 @@
     transition: 0.9s ease;
   }
   .filter-block__item:hover {
-    background-color: gray;
+    background-color: rgba(122, 128, 132, 0.3);
     transition: 0.9s ease;
   }
   .filter-block__button-price:hover svg {
@@ -37,11 +37,18 @@
     border: none;
     transition: 0.9s ease;
   }
-  .filter-block__button-search:hover {
+  .filter-block__button-search:hover .filter-block__button-search-visible-visible {
+    // top: -70px;
+    top: 110%;
     transition: 0.9s ease;
-    background-color: #8e9fbc;
-    opacity: 0.5;
+    // background-color: transparent;
     // color: #8e9fbc;
+    // border: 1px solid #8e9fbc;
+  }
+  .filter-block__button-search:hover .filter-block__button-search-hidden {
+    top: -62px;
+    transition: 0.9s ease;
+    opacity: 1;
   }
   .filter-block__select:hover .filter-block__button {
     background-color: #8e9fbc;

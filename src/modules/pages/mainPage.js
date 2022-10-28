@@ -17,7 +17,6 @@ class MainPage {
     this.initFooter();
   }
   initPreloader() {
-    document.querySelector('body').classList.add('scroll--hidden');
     window.onload = () => {
       Promise.resolve()
         .then(() => {
@@ -28,15 +27,13 @@ class MainPage {
         .then(() => {
           setTimeout(() => {
             this.preloader.removePreloader();
-            document.querySelector('body').classList.remove('scroll--hidden');
-          }, 1000);
+          }, 1500);
         });
     };
   }
   addContent() {
     const body = document.querySelector('body');
     body.append(this.preloader.element, this.header.element, this.main.element, this.footer.element);
-    //
     if (window.innerWidth < 1300) {
       document.querySelector('.filter').removeAttribute('data-aos');
       document.querySelector('.filter').removeAttribute('data-aos-duration');

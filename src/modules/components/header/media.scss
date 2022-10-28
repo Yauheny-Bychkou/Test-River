@@ -1,8 +1,11 @@
 @media (min-width: 1023px) {
-  .logo-link:hover svg {
-    fill: #8e9fbc;
-    opacity: 0.3;
-    transition: 0.9s ease;
+  .header-logo-link:hover .logo-link__title-header__hidden {
+    bottom: 1px;
+    transition: 0.7s ease;
+  }
+  .header-logo-link:hover .logo-link__title-header {
+    bottom: 62px;
+    transition: 0.7s ease;
   }
   .header-popUp__item:hover .header-popUp__link {
     color: #000;
@@ -13,6 +16,9 @@
     top: 65px;
     transition: 0.9s ease;
     pointer-events: auto;
+  }
+  .header-panel__user-scroll:hover .header-popUp {
+    top: 85px !important;
   }
   .header-panel__button-marks:hover .header-panel__button-marks-svg {
     opacity: 1;
@@ -36,10 +42,11 @@
   }
   .header-panel__nav-item-scroll:hover .header-panel__nav-line-scroll {
     background-color: #000 !important;
+    opacity: 0.6 !important;
   }
   .header-logo-scroll:hover {
     fill: #8e9fbc !important;
-    opacity: 0.3;
+    opacity: 1 !important;
     transition: 0.9s ease;
   }
   .header-panel__nav-item-scroll:hover .header-link-scroll {

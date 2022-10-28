@@ -177,21 +177,21 @@
   transition: 0.9s ease;
 }
 
-.footer-subscribe__button::after {
-  position: absolute;
-  content: 'подписаться';
-  top: 50%;
-  left: 50%;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 22px;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-  color: #fff;
-  transform: translate(-50%, -50%);
-}
+// .footer-subscribe__button::after {
+//   position: absolute;
+//   content: 'подписаться';
+//   top: 50%;
+//   left: 50%;
+//   font-family: 'Roboto';
+//   font-style: normal;
+//   font-weight: 500;
+//   font-size: 12px;
+//   line-height: 22px;
+//   letter-spacing: 0.6px;
+//   text-transform: uppercase;
+//   color: #fff;
+//   transform: translate(-50%, -50%);
+// }
 .footer-links__block-name {
   margin-bottom: 23px;
   font-weight: 500;
@@ -221,4 +221,13 @@
 }
 .footer-subscribe__menu {
   display: none;
+}
+.logo-link__title-footer {
+  color: #000 !important;
+}
+.footer-subscribe__button-wrap {
+  width: 269px;
+  height: 49px;
+  position: relative;
+  overflow: hidden;
 }

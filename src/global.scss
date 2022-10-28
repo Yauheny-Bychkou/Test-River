@@ -21,21 +21,51 @@ ul {
 .container {
 }
 .logo-link {
+  position: relative;
   color: #fff;
   text-transform: uppercase;
+  overflow: hidden;
+  display: block;
+  padding-top: 2px;
 }
 .main {
   overflow: hidden;
 }
-.logo-link-svg-header {
-  fill: #fff;
-  transition: 0.9s ease;
-}
+
 .logo-link-svg-footer {
   fill: #22282d;
   transition: 0.9s ease;
 }
-
+.panel__button-wrapper {
+  position: relative;
+  margin-right: 38px;
+  overflow: hidden;
+}
+.panel__button-absolute {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #fff;
+  transition: 0.9s ease;
+}
+.panel__button-absolute-visible {
+  top: 0px;
+}
+.panel__button-absolute-hidden {
+  opacity: 0;
+  bottom: -17px;
+  color: #8e9fbc;
+}
 .panel__button {
   position: relative;
   padding: 14px 39px 13px 39px;
@@ -44,9 +74,11 @@ ul {
   border: 0;
   width: 215px;
   height: 49px;
-  margin-right: 38px;
 }
 .panel__button-border {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 215px;
   height: 49px;
   fill: rgba(255, 255, 255, 0.04);
@@ -54,20 +86,25 @@ ul {
   stroke-opacity: 0.1;
   transition: 0.9s ease;
 }
-.panel__button::after {
-  position: absolute;
-  content: 'создать объявление';
-  left: 50%;
-  top: 50%;
-  width: 100%;
-  height: 100%;
-  transform: translate(-50%, -25%);
-  z-index: 5;
-  color: #fff;
-  text-transform: uppercase;
-  font-style: normal;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+
+// .panel__button::after {
+//   position: absolute;
+//   content: 'создать объявление';
+//   left: 50%;
+//   top: 50%;
+//   width: 100%;
+//   height: 100%;
+//   transform: translate(-50%, -25%);
+//   z-index: 5;
+//   color: #fff;
+//   text-transform: uppercase;
+//   font-style: normal;
+//   font-family: 'Roboto', sans-serif;
+//   font-weight: 500;
+//   font-size: 12px;
+//   line-height: 22px;
+// }
+.panel__button-wrapper-greeting {
   font-size: 12px;
   line-height: 22px;
 }
@@ -75,9 +112,40 @@ ul {
   width: 215px;
   margin-right: 0;
 }
-.panel__button-greeting::after {
-  content: 'найти';
+.panel__button-wrapper-footer {
+  margin: 0;
 }
+// .panel__button-greeting::after {
+//   content: 'найти';
+// }
 .scroll--hidden {
   overflow-y: hidden !important;
+}
+.panel__button-absolute-footer {
+  letter-spacing: 0.6px;
+}
+.panel__button-absolute-hidden-scroll {
+  color: #000 !important;
+}
+@media (max-width: 1300px) {
+  .panel__button-wrapper-greeting {
+    margin-top: 65px;
+    margin-right: 0;
+  }
+}
+@media (max-width: 799px) {
+  .panel__button-wrapper-greeting {
+    margin-top: 56px;
+  }
+}
+@media (min-width: 1023px) {
+  .panel__button-wrapper:hover .panel__button-absolute-visible {
+    top: -100px;
+    transition: 0.9s ease;
+  }
+  .panel__button-wrapper:hover .panel__button-absolute-hidden {
+    bottom: 0;
+    transition: 0.9s ease;
+    opacity: 1;
+  }
 }

@@ -107,7 +107,12 @@ class Filter {
         </div>
       </div>
       <div class="filter-block">
-        <button class="filter-block__button-search">Найти</button>
+        <div class="filter-block__button-search">
+          <div class="filter-block__button-search-visible-absolute filter-block__button-search-visible-visible">
+            найти
+          </div>
+          <div class="filter-block__button-search-visible-absolute filter-block__button-search-hidden">найти</div>
+        </div>
       </div>
     </div>
     <div class="filter-line"></div>
