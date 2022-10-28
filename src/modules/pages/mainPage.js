@@ -36,6 +36,7 @@ class MainPage {
   addContent() {
     const body = document.querySelector('body');
     body.append(this.preloader.element, this.header.element, this.main.element, this.footer.element);
+    //
     if (window.innerWidth < 1300) {
       document.querySelector('.filter').removeAttribute('data-aos');
       document.querySelector('.filter').removeAttribute('data-aos-duration');
