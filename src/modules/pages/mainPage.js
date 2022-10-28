@@ -17,6 +17,7 @@ class MainPage {
     this.initFooter();
   }
   initPreloader() {
+    document.querySelector('body').classList.add('scroll--hidden');
     window.onload = () => {
       Promise.resolve()
         .then(() => {
@@ -27,6 +28,7 @@ class MainPage {
         .then(() => {
           setTimeout(() => {
             this.preloader.removePreloader();
+            document.querySelector('body').classList.remove('scroll--hidden');
           }, 1000);
         });
     };

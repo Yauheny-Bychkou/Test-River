@@ -19,6 +19,7 @@
   box-shadow: 15px 15px 15px 15px #000;
 }
 .header-mobile-menu-visible {
+  overflow-y: auto;
   right: 0;
   transition: 0.9s ease;
 }
