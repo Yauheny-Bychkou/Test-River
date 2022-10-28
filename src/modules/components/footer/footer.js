@@ -5,7 +5,7 @@ class Footer {
   element = document.createElement('footer');
   constructor() {
     this.element.classList.add('footer');
-    this.element.setAttribute('data-aos', 'fade-up');
+    this.element.setAttribute('data-aos', 'fade-down');
     this.element.setAttribute('data-aos-duration', '1500');
     this.addContent();
   }
