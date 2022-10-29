@@ -10,7 +10,7 @@ class Greeting {
   addContent() {
     this.element.innerHTML = `
       <div class="greeting-wrapper">
-      <div class="container-greeting">  
+      <div class="container-greeting">
         <span class="greeting-wrapper-span">yachting</span>
       </div>
       <svg class="greeting-wrapper-svg" width="378" height="378" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -33,17 +33,16 @@ class Greeting {
         Ищите, сравнивайте и покупайте лодки с помощью нашего каталого и проверенных экспертов
       </h3>
       <div class="panel__button-wrapper panel__button-wrapper-greeting">
-              <div class="panel__button-absolute panel__button-absolute-visible">найти</div>
-              <div class="panel__button-absolute panel__button-absolute-hidden">найти</div>
-              <button class="panel__button panel__button-greeting">
-            <svg class="panel__button-border" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M5.768.5H209.42c2.393 0 4.13 2.367 3.473 4.7-1.46 5.18-3.392 13.183-3.392 19.3 0 6.117 1.932 14.12 3.392 19.3.657 2.333-1.08 4.7-3.473 4.7H5.769c-2.44 0-4.189-2.454-3.459-4.816C3.91 38.51 6 30.595 6 24.5c0-6.095-2.09-14.009-3.69-19.184C1.58 2.954 3.33.5 5.768.5Z"
-              />
-            </svg>
-          </button>
-            </div>
-        
+        <div class="panel__button-absolute panel__button-absolute-visible">найти</div>
+        <div class="panel__button-absolute panel__button-absolute-hidden">найти</div>
+        <button class="panel__button panel__button-greeting">
+          <svg class="panel__button-border" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M5.768.5H209.42c2.393 0 4.13 2.367 3.473 4.7-1.46 5.18-3.392 13.183-3.392 19.3 0 6.117 1.932 14.12 3.392 19.3.657 2.333-1.08 4.7-3.473 4.7H5.769c-2.44 0-4.189-2.454-3.459-4.816C3.91 38.51 6 30.595 6 24.5c0-6.095-2.09-14.009-3.69-19.184C1.58 2.954 3.33.5 5.768.5Z"
+            />
+          </svg>
+        </button>
+      </div>
     </div>
     `;
   }
