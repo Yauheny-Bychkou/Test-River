@@ -22,6 +22,7 @@ class MainPage {
         .then(() => {
           setTimeout(() => {
             this.preloader.stopPreloader();
+            // console.log(document.querySelector('.greeting-wrapper__title-gray'));
           }, 500);
         })
         .then(() => {

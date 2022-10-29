@@ -1,4 +1,9 @@
 @media (max-width: 1300px) {
+  .panel__button-wrapper-greeting:hover .panel__button-greeting svg {
+    stroke-opacity: 1 !important;
+    fill: rgba(255, 255, 255, 0.1) !important;
+    transition: 0.9s ease;
+  }
   .greeting {
     height: 602px;
   }

@@ -180,19 +180,18 @@
   margin-right: 0;
 }
 .header-panel__nav-link {
+  display: block;
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
   font-size: 14px;
-  transition: 0.9s ease;
   padding-bottom: 3px;
   transition: 0.9s ease;
 }
 .header-panel__nav-line {
   width: 0%;
   height: 1px;
-  background-color: #8e9fbc;
-  opacity: 0.3;
+  background-color: rgba(142, 159, 188, 0.3);
   transition: 0.9s ease;
 }
 .header-panel__buttons-marks {

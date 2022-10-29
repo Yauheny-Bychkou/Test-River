@@ -1,4 +1,10 @@
 @media (min-width: 1023px) {
+  .footer-subscribe__button-wrapper:hover .footer-subscribe__button svg {
+    fill: #fff !important;
+    stroke: #7a8084 !important;
+    stroke-opacity: 1 !important;
+    transition: 0.9s ease;
+  }
   .footer-subscribe__button-wrapper:hover .panel__button-absolute-visible {
     top: -100px;
     transition: 0.9s ease;

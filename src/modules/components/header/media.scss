@@ -1,4 +1,15 @@
 @media (min-width: 1023px) {
+  .panel__button-wrapper-header:hover .panel__button-header svg {
+    stroke-opacity: 1 !important;
+    fill: rgba(255, 255, 255, 0.1) !important;
+    transition: 0.9s ease;
+  }
+  .panel__button-wrapper-header-scroll:hover .panel__button-header svg {
+    stroke: #000 !important;
+    fill: #fff !important;
+    stroke-opacity: 1 !important;
+    transition: 0.9s ease;
+  }
   .header-logo-link:hover .logo-link__title-header__hidden {
     bottom: 1px;
     transition: 0.7s ease;

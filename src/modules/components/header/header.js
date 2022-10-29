@@ -214,7 +214,7 @@ class Header {
                 </li>
               </ul>
             </nav>
-            <div class="panel__button-wrapper">
+            <div class="panel__button-wrapper panel__button-wrapper-header">
               <div class="panel__button-absolute panel__button-absolute-visible">создать объявление</div>
               <div class="panel__button-absolute panel__button-absolute-hidden">создать объявление</div>
               <button class="panel__button panel__button-header">
@@ -327,7 +327,6 @@ class Header {
     const backButton = document.querySelector('.header-mobile-menu__body__hidden-back');
     const menu = document.querySelector('.header-mobile-menu');
     const buttonClose = document.querySelector('.header-mobile-menu__close');
-
     buttonClose.addEventListener('click', () => {
       menu.classList.remove('header-mobile-menu-visible');
       body.classList.remove('scroll--hidden');
@@ -357,8 +356,11 @@ class Header {
     const headerButton = document.querySelector('.panel__button-header');
     const collectLines = document.querySelectorAll('.header-panel__nav-line');
     const textButtonCreateHeader = document.querySelector('.panel__button-absolute-hidden');
+    const wrapperButton = document.querySelector('.panel__button-wrapper-header');
+
     window.addEventListener('scroll', () => {
       if (window.scrollY > 1) {
+        wrapperButton.classList.add('panel__button-wrapper-header-scroll');
         blockUser.classList.add('header-panel__user-scroll');
         textButtonCreateHeader.classList.add('panel__button-absolute-hidden-scroll');
         collectLines.forEach((item) => {
@@ -381,6 +383,7 @@ class Header {
         headerBurger.classList.add('header-burger-scroll');
         headerButton.classList.add('header-button-scroll');
       } else {
+        wrapperButton.classList.remove('panel__button-wrapper-header-scroll');
         blockUser.classList.remove('header-panel__user-scroll');
         textButtonCreateHeader.classList.remove('panel__button-absolute-hidden-scroll');
         header.classList.remove('header-scroll');
